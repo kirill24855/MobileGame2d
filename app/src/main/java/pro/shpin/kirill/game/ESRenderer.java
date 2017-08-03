@@ -69,13 +69,13 @@ public class ESRenderer implements GLSurfaceView.Renderer {
 		final float[] triVertData = {
 				// X, Y, Z,
 				// R, G, B, A
-				-0.5f, -0.25f, 0.0f,
+				-0.05f, -0.025f, 0.0f,
 				1.0f, 0.0f, 0.0f, 1.0f,
 
-				0.5f, -0.25f, 0.0f,
+				0.05f, -0.025f, 0.0f,
 				0.0f, 0.0f, 1.0f, 1.0f,
 
-				0.0f, 0.559016994f, 0.0f,
+				0.0f, 0.0559016994f, 0.0f,
 				0.0f, 1.0f, 0.0f, 1.0f
 		};
 

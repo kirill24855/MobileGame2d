@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import pro.shpin.kirill.game.control.UpdateEngine;
+
 public class MainActivity extends AppCompatActivity {
 
 	private GLSurfaceView glSurfaceView;
@@ -44,6 +46,13 @@ public class MainActivity extends AppCompatActivity {
 		);
 
 		setContentView(glSurfaceView);
+
+		try {
+			UpdateEngine engine = new UpdateEngine(game);
+			engine.start();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
