@@ -4,8 +4,8 @@ import android.util.Log;
 
 public class Game {
 
-	private float touchX = 0;
-	private float touchY = 0;
+	private volatile float touchX = 0;
+	private volatile float touchY = 0;
 
 	public void init() {
 

@@ -201,7 +201,7 @@ public class ESRenderer implements GLSurfaceView.Renderer {
 		glEnableVertexAttribArray(colorHandle);
 
 		Matrix.multiplyMM(MVPMatrix, 0, viewMatrix, 0, modelMatrix, 0);
-		Matrix.multiplyMM(MVPMatrix, 0, projectionMatrix, 0, MVPMatrix, 0);
+		//Matrix.multiplyMM(MVPMatrix, 0, projectionMatrix, 0, MVPMatrix, 0);
 
 		glUniformMatrix4fv(MVPMatrixHandle, 1, false, MVPMatrix, 0);
 		glDrawArrays(GL_TRIANGLES, 0, 3);
